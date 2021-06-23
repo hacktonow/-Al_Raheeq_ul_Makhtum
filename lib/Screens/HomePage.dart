@@ -1,3 +1,4 @@
+import 'package:al_raheeq_ul_makhtoom/Screens/Content_List1.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,7 +14,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.yellow[200],
         title: Center(
           child: Text(
-            "الرحق المختومی",
+            "الرحق المختوم",
             style: TextStyle(
               fontSize: 25,
               color: Colors.black,
@@ -37,7 +38,10 @@ class _HomePageState extends State<HomePage> {
             bottom: 100,
             right: 180,
             child: FloatingActionButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Content_List1()));
+              },
               child: const Icon(
                 Icons.arrow_forward,
                 color: Colors.black,

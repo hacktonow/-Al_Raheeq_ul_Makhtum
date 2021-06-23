@@ -10,7 +10,7 @@ class Content_List1 extends StatelessWidget {
         backgroundColor: Colors.yellow[200],
         title: Center(
           child: Text(
-            "الرحق المختومی",
+            "الرحق المختوم",
             style: TextStyle(
               fontSize: 25,
               color: Colors.black,
@@ -20,7 +20,11 @@ class Content_List1 extends StatelessWidget {
         ),
       ),
       body: Container(
-        child: Center(child: Text("this is content list page")),
+        child: Center(
+            child: Text(
+          "This is content list page",
+          style: TextStyle(fontSize: 30),
+        )),
       ),
     );
   }
