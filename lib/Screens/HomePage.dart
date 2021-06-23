@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,7 +13,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.yellow[200],
         title: Center(
           child: Text(
-            "الرحیق المختوم",
+            "الرحق المختومی",
             style: TextStyle(
               fontSize: 25,
               color: Colors.black,
@@ -30,15 +28,16 @@ class _HomePageState extends State<HomePage> {
         color: Colors.yellow[100],
         child: Stack(alignment: Alignment.topCenter, children: [
           Positioned(
-              top: 10,
-              child: Text('My name is Rashid i am working just for Allah .  ')),
+              top: 200,
+              child: Image.asset(
+                'assets/images/front.png',
+                height: 225,
+              )),
           Positioned(
             bottom: 100,
             right: 180,
             child: FloatingActionButton(
-              onPressed: () {
-                // Add your onPressed code here!
-              },
+              onPressed: () {},
               child: const Icon(
                 Icons.arrow_forward,
                 color: Colors.black,
