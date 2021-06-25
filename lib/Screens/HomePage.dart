@@ -1,4 +1,3 @@
-import 'package:al_raheeq_ul_makhtoom/Screens/Content_List1.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -36,14 +35,13 @@ class _HomePageState extends State<HomePage> {
               )),
           Positioned(
             bottom: 100,
-            right: 180,
+            right: 190,
             child: FloatingActionButton(
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Content_List1()));
+                Navigator.pushNamed(context, "/Home");
               },
               child: const Icon(
-                Icons.arrow_forward,
+                Icons.arrow_back_ios,
                 color: Colors.black,
                 size: 25,
               ),
@@ -52,7 +50,7 @@ class _HomePageState extends State<HomePage> {
           ),
           Positioned(
             bottom: 70,
-            right: 180,
+            right: 190,
             child: Text(
               'Start',
               style: TextStyle(

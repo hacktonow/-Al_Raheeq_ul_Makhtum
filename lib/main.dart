@@ -1,6 +1,7 @@
 import 'dart:async';
 
-import 'package:al_raheeq_ul_makhtoom/Screens/Content_List1.dart';
+import 'package:al_raheeq_ul_makhtoom/Screens/ContentList1.dart';
+import 'package:al_raheeq_ul_makhtoom/Screens/HomeScreen.dart';
 import 'package:flutter/material.dart';
 
 import 'Screens/HomePage.dart';
@@ -16,7 +17,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
       routes: {
-        "list1": (context) => Content_List1(),
+        '/Home': (context) => HomeScreen(),
+        '/list1': (context) => ContentList1(),
       },
     );
   }
