@@ -15,10 +15,10 @@ class _HomePageState extends State<HomePage> {
           child: Text(
             "الرحق المختوم",
             style: TextStyle(
-              fontSize: 25,
-              color: Colors.black,
-              fontWeight: FontWeight.bold,
-            ),
+                fontSize: 30,
+                color: Colors.black,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'jameel'),
           ),
         ),
       ),
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                 fontWeight: FontWeight.bold,
               ),
             ),
-          )
+          ),
         ]),
       ),
     );
