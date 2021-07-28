@@ -21,8 +21,8 @@ class HomeScreen extends StatelessWidget {
                         image: AssetImage('assets/images/bg.png'),
                         fit: BoxFit.fitWidth),
                     borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(50),
-                      bottomRight: Radius.circular(50),
+                      bottomLeft: Radius.circular(100),
+                      bottomRight: Radius.circular(100),
                     )),
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 25, vertical: 60),
@@ -83,9 +83,7 @@ class HomeScreen extends StatelessWidget {
                         child: Row(
                           children: [
                             IconButton(
-                                onPressed: () {
-                                  Navigator.pushNamed(context, '/list1');
-                                },
+                                onPressed: () {},
                                 icon: Icon(
                                   Icons.arrow_back_ios,
                                   size: 30,
@@ -111,7 +109,9 @@ class HomeScreen extends StatelessWidget {
                       height: 20,
                     ),
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, '/firstp');
+                      },
                       child: Container(
                         width: 300,
                         padding:
@@ -204,27 +204,8 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 100,
+                      height: 150,
                     ),
-                    ElevatedButton.icon(
-                        style: ElevatedButton.styleFrom(
-                          primary: Colors.yellow[200],
-                          onPrimary: Colors.black,
-                          onSurface: Colors.orange,
-                          textStyle: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 20),
-                          side: BorderSide(
-                              color: Colors.black12,
-                              width: 2.0,
-                              style: BorderStyle.solid),
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(40.0)),
-                        ),
-                        onPressed: () {
-                          Share.share('https://paakinfo.com/');
-                        },
-                        icon: Icon(Icons.share),
-                        label: Text('Share')),
                   ],
                 ),
               ),

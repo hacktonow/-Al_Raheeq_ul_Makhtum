@@ -1,7 +1,9 @@
 import 'dart:async';
 
 import 'package:al_raheeq_ul_makhtoom/Screens/ContentList1.dart';
+import 'package:al_raheeq_ul_makhtoom/Screens/Home2.dart';
 import 'package:al_raheeq_ul_makhtoom/Screens/HomeScreen.dart';
+import 'package:al_raheeq_ul_makhtoom/Screens/firstp.dart';
 
 import 'package:flutter/material.dart';
 
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/Home': (context) => BottomNavigation(),
         '/list1': (context) => ContentList1(),
+        '/firstp': (context) => PhotoViewDemo(),
       },
     );
   }
@@ -39,7 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(Duration(seconds: 3), () {
       Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (_) => HomePage()));
+          .pushReplacement(MaterialPageRoute(builder: (_) => HomeScreen()));
     });
   }
 

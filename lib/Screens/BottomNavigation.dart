@@ -48,6 +48,14 @@ class _BottomNavigationState extends State<BottomNavigation> {
             ),
             label: 'Favorite',
           ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.share,
+              size: 30,
+              color: Colors.black,
+            ),
+            label: 'Share',
+          ),
         ],
       ),
     );

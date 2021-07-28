@@ -52,11 +52,11 @@ class _HomePageState extends State<HomePage> {
             bottom: 70,
             right: 190,
             child: Text(
-              'Start',
+              'سروع کریں',
               style: TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'jameel'),
             ),
           ),
         ]),
