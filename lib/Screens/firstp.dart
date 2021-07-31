@@ -3,29 +3,22 @@ import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
 
-class PhotoViewDemo extends StatefulWidget {
+class PhotoView extends StatefulWidget {
   @override
   _PhotoViewDemoState createState() => _PhotoViewDemoState();
 }
 
-class _PhotoViewDemoState extends State<PhotoViewDemo> {
-  final imageList = [
-    'assets/images/logo2.jpg',
-    'assets/images/logo2.jpg',
-    'assets/images/logo2.jpg',
-    'assets/images/logo2.jpg',
-  ];
+class _PhotoViewDemoState extends State<PhotoView> {
+  final List imageList = [];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("PhotoView Demo"),
-      ),
       // add this body tag with container and photoview widget
       body: Container(
         margin: EdgeInsets.only(left: 15, right: 15),
         child: PhotoViewGallery.builder(
+          reverse: true,
           itemCount: imageList.length,
           builder: (context, index) {
             return PhotoViewGalleryPageOptions(

@@ -5,6 +5,8 @@ import 'package:al_raheeq_ul_makhtoom/main.dart';
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
 
+import 'firstp.dart';
+
 class BottomNavigation extends StatefulWidget {
   @override
   _BottomNavigationState createState() => _BottomNavigationState();

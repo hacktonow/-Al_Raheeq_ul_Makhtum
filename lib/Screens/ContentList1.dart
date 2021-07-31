@@ -84,28 +84,27 @@ class ContentList1 extends StatelessWidget {
       body: ListView.builder(
         itemBuilder: (listViewContext, index) {
           return Container(
-            child: ListTile(
-              onTap: () {},
-              trailing: Icon(
-                Icons.arrow_back_ios_new,
-                color: Colors.black,
-              ),
-              leading: Text(
-                num[index],
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'jameel'),
-              ),
-              title: Text(
-                ContentList[index],
-                textAlign: TextAlign.end,
-                style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'jameel'),
+            child: Card(
+              shadowColor: Colors.black87,
+              child: ListTile(
+                onTap: () {},
+                trailing: Icon(
+                  Icons.arrow_back_ios_new,
+                  color: Colors.black,
+                ),
+                leading: Icon(
+                  Icons.arrow_back,
+                  color: Colors.black,
+                ),
+                title: Text(
+                  ContentList[index],
+                  textAlign: TextAlign.end,
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'jameel'),
+                ),
               ),
             ),
           );
