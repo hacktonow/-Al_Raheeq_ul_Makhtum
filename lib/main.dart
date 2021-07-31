@@ -7,6 +7,7 @@ import 'package:al_raheeq_ul_makhtoom/Screens/firstp.dart';
 import 'package:flutter/material.dart';
 
 import 'Screens/BottomNavigation.dart';
+import 'Screens/Home2.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/Home': (context) => BottomNavigation(),
         '/list1': (context) => ContentList1(),
-        '/firstp': (context) => PhotoView(),
+        '/firstp': (context) => Home2(),
       },
     );
   }

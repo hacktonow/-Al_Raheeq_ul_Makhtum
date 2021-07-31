@@ -17,10 +17,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _currentIndex = 3;
-
   final List listaPagine = [
-    'assets/images/applogo.jpg',
+    'assets/images/p1.jpeg',
     'assets/images/logo2.jpg',
     'assets/images/logo2.jpg',
     'assets/images/logo2.jpg',
@@ -28,24 +26,26 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('# $_currentIndex'),
-      ),
-      body: PhotoViewGallery.builder(
-        reverse: true,
-        itemCount: listaPagine.length,
-        builder: (BuildContext context, int index) {
-          String myImg = listaPagine[index];
-
-          return PhotoViewGalleryPageOptions(
-            imageProvider: NetworkImage(myImg),
-          );
-        },
-        onPageChanged: (int index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
+      body: Container(
+        margin: EdgeInsets.only(left: 15, right: 15),
+        child: PhotoViewGallery.builder(
+          reverse: true,
+          itemCount: listaPagine.length,
+          builder: (BuildContext context, int index) {
+            String myImg = listaPagine[index];
+            return PhotoViewGalleryPageOptions(
+              imageProvider: AssetImage(myImg),
+              minScale: PhotoViewComputedScale.contained * 0.8,
+              maxScale: PhotoViewComputedScale.covered * 2,
+            );
+          },
+          scrollPhysics: BouncingScrollPhysics(),
+          backgroundDecoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+            color: Theme.of(context).canvasColor,
+          ),
+          enableRotation: true,
+        ),
       ),
     );
   }

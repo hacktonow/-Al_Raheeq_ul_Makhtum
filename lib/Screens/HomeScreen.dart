@@ -83,7 +83,9 @@ class HomeScreen extends StatelessWidget {
                         child: Row(
                           children: [
                             IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, '/list1');
+                                },
                                 icon: Icon(
                                   Icons.arrow_back_ios,
                                   size: 30,
@@ -132,7 +134,9 @@ class HomeScreen extends StatelessWidget {
                         child: Row(
                           children: [
                             IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushNamed(context, '/firstp');
+                                },
                                 icon: Icon(
                                   Icons.arrow_back_ios,
                                   size: 30,
