@@ -11,6 +11,16 @@ class PhotoView extends StatefulWidget {
 class _PhotoViewDemoState extends State<PhotoView> {
   final List imageList = [
     'assets/images/p1.jpeg',
+    'assets/images/p2.jpeg',
+    'assets/images/p3.jpeg',
+    'assets/images/p4.jpeg',
+    'assets/images/p5.jpeg',
+    'assets/images/p6.jpeg',
+    'assets/images/p7.jpeg',
+    'assets/images/p8.jpeg',
+    'assets/images/p9.jpeg',
+    'assets/images/p10.jpeg',
+    'assets/images/p11.jpeg',
   ];
 
   @override
@@ -22,10 +32,9 @@ class _PhotoViewDemoState extends State<PhotoView> {
         child: PhotoViewGallery.builder(
           reverse: true,
           itemCount: imageList.length,
-          builder: (BuildContext context, int index) {
-            String myImg = imageList[index];
+          builder: (context, index) {
             return PhotoViewGalleryPageOptions(
-              imageProvider: AssetImage(myImg),
+              imageProvider: AssetImage(imageList[index]),
               minScale: PhotoViewComputedScale.contained * 0.8,
               maxScale: PhotoViewComputedScale.covered * 2,
             );

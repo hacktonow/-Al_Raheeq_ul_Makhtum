@@ -21,8 +21,8 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(),
       routes: {
         '/Home': (context) => BottomNavigation(),
-        '/list1': (context) => ContentList1(),
-        '/firstp': (context) => Home2(),
+        '/list1': (context) => Home2(),
+        '/firstp': (context) => PhotoView(),
       },
     );
   }
