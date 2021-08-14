@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       home: SplashScreen(),
       routes: {
         '/Home': (context) => BottomNavigation(),
-        '/list1': (context) => Home2(),
+        '/list1': (context) => listTile(),
         '/firstp': (context) => PhotoView(),
       },
     );
@@ -40,8 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
     // TODO: implement initState
     super.initState();
     Timer(Duration(seconds: 3), () {
-      Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (_) => BottomNavigation()));
+      Navigator.pushNamed(context, '/Home');
     });
   }
 

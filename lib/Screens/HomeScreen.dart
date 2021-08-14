@@ -26,32 +26,34 @@ class HomeScreen extends StatelessWidget {
                     )),
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 25, vertical: 60),
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Image.asset(
-                            "assets/images/applogo.jpg",
-                            height: 150,
-                          ),
-                          SizedBox(
-                            width: 15,
-                          ),
-                          Expanded(
-                              child: Column(
-                            children: [
-                              Text(
-                                  "جو شخص ہر فرض نماز کے بعد آیت الکرسی پڑھے وہ اگلی نماز تک اللہ تعالی کے ذمے میں رہے گا",
-                                  textAlign: TextAlign.end,
-                                  style: TextStyle(
-                                      fontSize: 25,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'jameel')),
-                            ],
-                          ))
-                        ],
-                      )
-                    ],
+                  child: Expanded(
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Image.asset(
+                              "assets/images/applogo.jpg",
+                              height: 150,
+                            ),
+                            SizedBox(
+                              width: 15,
+                            ),
+                            Expanded(
+                                child: Column(
+                              children: [
+                                Text(
+                                    "جو شخص ہر فرض نماز کے بعد آیت الکرسی پڑھے وہ اگلی نماز تک اللہ تعالی کے ذمے میں رہے گا",
+                                    textAlign: TextAlign.end,
+                                    style: TextStyle(
+                                        fontSize: 25,
+                                        fontWeight: FontWeight.bold,
+                                        fontFamily: 'jameel')),
+                              ],
+                            ))
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ),

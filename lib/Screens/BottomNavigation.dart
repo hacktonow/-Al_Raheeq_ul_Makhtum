@@ -1,11 +1,9 @@
 import 'package:al_raheeq_ul_makhtoom/Screens/ContentList1.dart';
-import 'package:al_raheeq_ul_makhtoom/Screens/Home2.dart';
+
 import 'package:al_raheeq_ul_makhtoom/Screens/HomeScreen.dart';
-import 'package:al_raheeq_ul_makhtoom/main.dart';
+
 import 'package:flutter/material.dart';
 import 'package:share/share.dart';
-
-import 'firstp.dart';
 
 class BottomNavigation extends StatefulWidget {
   @override
